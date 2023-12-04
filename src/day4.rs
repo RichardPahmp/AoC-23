@@ -1,4 +1,4 @@
-use std::collections::{HashSet, VecDeque};
+use std::collections::HashSet;
 
 use crate::Puzzle;
 
@@ -9,7 +9,7 @@ struct Card {
 
 impl Card {
     pub fn parse(input: &str) -> Self {
-        let (winners, numbers) = input.split_once("|").unwrap();
+        let (winners, numbers) = input.split_once('|').unwrap();
         let (_, winners) = winners.split_once(':').unwrap();
         let winners = winners
             .split_whitespace()
