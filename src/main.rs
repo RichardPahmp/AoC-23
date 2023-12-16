@@ -1,6 +1,6 @@
 use aoc23::{
     day1::Day1, day2::Day2, day3::Day3, day4::Day4, day5::Day5, day6::Day6, day7::Day7, day8::Day8,
-    run,
+    day9::Day9, run,
 };
 use clap::Parser;
 
@@ -20,4 +20,5 @@ fn main() {
     run::<Day6>(6, include_str!("input/day6"));
     run::<Day7>(7, include_str!("input/day7"));
     run::<Day8>(8, include_str!("input/day8"));
+    run::<Day9>(9, include_str!("input/day9"));
 }
